@@ -63,24 +63,23 @@
 		<form>
 			<div class="selections">
 				<div class="data">
-					<label>Kwota <input type="number"></label>
+					<p><label for="cost">Kwota </label>
+					<input type="number" id="cost" name="cost"></p>
+				
+				
+					<p><label for="date">Data </label>
+					<input type="date" id="date" name="date"></p>
 				</div>
 					
 				<div class="selections-nth">
-					<label for="payment">Sposób płatności </label>
+					<p><label for="payment">Sposób płatności </label>
 					<select id="payment" name="payment">
 						<option value="c">gotówka</option>
 						<option value="dc">karta debetowa</option>
 						<option value="cc">karta kredytowa</option>			
-					</select>	
-				</div>
-				
-				<div class="data">
-					<label>Data <input type="date"></label>
-				</div>
-						
-				<div class="selections-nth">
-					<label for="category">Kategoria </label>
+					</select>	</p>
+
+					<p><label for="category">Kategoria </label>
 					<select id="category" name="category">
 						<option value="1">jedzenie</option> 
 						<option value="2">mieszkanie</option>
@@ -99,7 +98,7 @@
 						<option value="15">spłata długów</option>
 						<option value="16">darowizna</option>
 						<option value="17">inne wydatki</option>
-					</select>
+					</select></p>
 				</div>
 			</div>
 			
