@@ -1,0 +1,140 @@
+*{
+	box-sizing: border-box;
+}
+
+body
+{
+	background-color: #F7F7F2; 
+	font-family: 'Open Sans', sans-serif;
+	color: #202020;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1
+{
+	font-size: 50px;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	text-shadow: 1px 1px #808080;
+	margin-bottom: 40px;
+}
+
+form
+{
+	width: 100%;
+	max-width: 300px;
+	height: 220px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #FCFCF9;
+	padding: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	-webkit-box-shadow: 4px 5px 20px -8px rgba(66, 68, 90, 1);
+	-moz-box-shadow: 4px 5px 20px -8px rgba(66, 68, 90, 1);
+	box-shadow: 4px 5px 20px -8px rgba(66, 68, 90, 1);
+}
+
+.row
+{
+	margin-bottom: 10px;
+}
+
+input[type=text], input[type=password]
+{
+	width: 200px;
+	height: 25px;
+	background-color: #FDFDFA;
+	font-size: 15px;
+	color: #202020;
+	border: 0.7px solid #202020;
+	border-radius: 5px;
+	outline: none;
+}
+
+
+input[type=text]:focus,
+input[type=password]:focus
+{
+	-webkit-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+	-moz-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+	box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+	border: 2px solid #A5CDA5;
+	color: #428C42;
+}
+
+input[type=submit]
+{
+	width: 205px;
+	height: 35px;
+	background-color: #66967A;
+	font-size: 20px;
+	color: #FCFCF9;
+	text-shadow: 0.5px 0.5px #F7F7F2;
+	border: 0.5px solid #66967A;
+	border-radius: 5px;
+	outline: none;
+	margin-top: 30px;
+}
+
+input[type=submit]:hover
+{
+	opacity: 0.80;
+}
+
+input[type=submit]:focus
+{
+	-webkit-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+	-moz-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+	box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+}
+
+.link
+{
+	font-size: 15px;
+	color: #BAD1D1;
+	text-decoration: none;
+	
+}
+
+@media (max-width: 550px)
+{
+	
+	h1
+	{
+		font-size: 40px;
+	}
+	
+	input[type=text], input[type=password]
+	{
+		width: 180px;
+	}
+	
+	input[type=submit]
+	{
+		width: 180px;
+		height: 30px;
+		font-size: 15px;
+		margin-top: 25px;
+	}
+	
+	.link
+	{
+		font-size: 13px;
+	}
+	
+}
+
+@media (max-width: 350px)
+{
+	
+	h1
+	{
+		font-size: 30px;
+	}
+}
