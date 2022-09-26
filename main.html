@@ -10,39 +10,41 @@
 	<meta name="description" content="Aplikacja ułatwiająca zarządzanie budżetem domowym." />
 	<meta name="keywords" content="budżet, finanse, dom, lifestyle" />
 	
-	<link rel="stylesheet" href="main-style.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
 	<link rel="stylesheet" href="fontello/css/fontello.css">	
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 	
 </head>
 
 <body>
 
 	<header>
-		<h1>Budżet domowy</h1>
+		<h1>budżet domowy</h1>
 	</header>
 
 	<main>
-		<nav>
-			<a href="balance.html" class="balance">
-				<div class="row"> PRZEGLĄDAJ BILANS</div>
-				<div class="row"><i class="icon-th-list"></i></div>
+		<nav class="tiles">
+			<a href="balance.html" class="balance-tile">
+				<div class="row-balance"> PRZEGLĄDAJ BILANS</div>
+				<div class="row-balance"><i class="icon-th-list"></i></div>
 			</a>
 		
 			<div class="wrapper-others">
-				<a href="income.html" class="income">
-					<span>+</span>DODAJ PRZYCHÓD
+				<a href="income.html" class="income-tile">
+					<span class="add">+</span>DODAJ PRZYCHÓD
 				</a>
 				
-				<a href="expense.html" class="expense">
-					<span>+</span>DODAJ WYDATEK
+				<a href="expense.html" class="expense-tile">
+					<span class="add">+</span>DODAJ WYDATEK
 				</a>
 				
-				<a href="settings.html" class="settings">
+				<a href="settings.html" class="settings-tile">
 					<i class="icon-cog-outline"></i>
 				</a>
 				
-				<a href="logout.html" class="logout">
+				<a href="logout.html" class="logout-tile">
 					<i class="icon-logout"></i>
 				</a>
 			</div>
