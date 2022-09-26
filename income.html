@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Budżet domowy - dodaj przychód</title>
+	
+	<meta name="description" content="Aplikacja ułatwiająca zarządzanie budżetem domowym." />
+	<meta name="keywords" content="budżet, finanse, dom, lifestyle" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="fontello/css/fontello.css">	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	
+</head>
+
+<body>
+
+	<header>	
+		<h1>budżet domowy</h1>
+	</header>
+
+	<main>
+	
+	<nav class="bar">
+		<a href="main.html" class="main-page">
+			<i class="icon-home"></i>
+		</a>
+		<button class="hamburger">
+			<i class="icon-menu"></i>
+		</button>
+		<ul>
+			<li>
+				<a href="balance.html" class="menu-balance">przeglądaj bilans</a>
+			</li>
+			
+			<li>
+				<a href="income.html" class="menu-income">dodaj przychód</a>
+			</li>
+			
+			<li>
+				<a href="expense.html" class="menu-expense">dodaj wydatek</a>
+			</li>
+		</ul>
+		
+		<a href="settings.html" class="settings">
+			<i class="icon-cogs"></i>
+		</a>
+		
+		<a href="settings.html" class="settings">
+			<i class="icon-logout"></i>
+		</a>
+	</nav>
+	
+	<article>
+	
+		<header>
+			<h2 class="income-page">dodaj przychód</h2>
+		</header>	
+		
+		<form class="income-page">
+			<div class="selections">
+				<div class="data">
+					<div class="row-input"><label for="cost" class="data-label">Kwota </label>
+					<input type="number" id="cost" name="cost"></div>
+				
+					<div class="row-input"><label for="date" class="data-label">Data </label>
+					<input type="date" id="date" name="date"></div>
+				</div>
+					
+				<div class="selections-nth">
+				<span>Kategoria</span>
+					<div class="row-radio"><input type="radio" id="paycheck" name="category" value="paycheck">
+					<label for="paycheck">wynagrodzenie</label></div>
+					
+					<div class="row-radio"><input type="radio" id="interest" name="category" value="interest">
+					<label for="interest">odsetki bankowe</label></div>
+					
+					<div class="row-radio"><input type="radio" id="allegro" name="category" value="allegro">
+					<label for="allegro">sprzedaż na allegro</label></div>
+					
+					<div class="row-radio"><input type="radio" id="others" name="category" value="others">
+					<label for="others">inne</label></div>
+				</div>
+			</div>
+			
+			<div class="comment">
+				<label for="comment">Komentarz (opcjonalnie)</label>
+				<textarea id="comment"></textarea>
+			</div>
+			
+			<div class="buttons">
+				<label><input type="submit" id="add" value="Dodaj"></label>
+				<label><input type="submit" id="cancel" value="Anuluj"></label>
+			</div>
+			
+		</form>
+		
+	</article>
+	
+	</main>
+	
+	<footer>
+		<i class="icon-mail"></i> marta.gonsiorowska@gmail.com
+	</footer>
+
+</body>
+</html>
