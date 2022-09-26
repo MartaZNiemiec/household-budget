@@ -9,21 +9,23 @@
 	
 	<meta name="description" content="Aplikacja ułatwiająca zarządzanie budżetem domowym." />
 	<meta name="keywords" content="budżet, finanse, dom, lifestyle" />
-	<link rel="stylesheet" href="expense-style.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
 	<link rel="stylesheet" href="fontello/css/fontello.css">	
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 	
 </head>
 
 <body>
 
 	<header>	
-		<h1>Budżet domowy</h1>
+		<h1>budżet domowy</h1>
 	</header>
 
 	<main>
 	
-	<nav>
+	<nav class="bar">
 		<a href="main.html" class="main-page">
 			<i class="icon-home"></i>
 		</a>
@@ -32,15 +34,15 @@
 		</button>
 		<ul>
 			<li>
-				<a href="balance.html" class="balance">przeglądaj bilans</a>
+				<a href="balance.html" class="menu-balance">przeglądaj bilans</a>
 			</li>
 			
 			<li>
-				<a href="income.html" class="income">dodaj przychód</a>
+				<a href="income.html" class="menu-income">dodaj przychód</a>
 			</li>
 			
 			<li>
-				<a href="expense.html" class="expense">dodaj wydatek</a>
+				<a href="expense.html" class="menu-expense">dodaj wydatek</a>
 			</li>
 		</ul>
 		
@@ -57,29 +59,29 @@
 	<article>
 	
 		<header>
-			<h2>dodaj wydatek</h2>
+			<h2 class="expense-page">dodaj wydatek</h2>
 		</header>	
 		
-		<form>
+		<form class="expense-page">
 			<div class="selections">
 				<div class="data">
-					<p><label for="cost">Kwota </label>
-					<input type="number" id="cost" name="cost"></p>
+					<div class="row"><label for="cost" class="data-label">Kwota </label>
+					<input type="number" id="cost" name="cost"></div>
 				
 				
-					<p><label for="date">Data </label>
-					<input type="date" id="date" name="date"></p>
+					<div class="row"><label for="date" class="data-label">Data </label>
+					<input type="date" id="date" name="date"></div>
 				</div>
 					
 				<div class="selections-nth">
-					<p><label for="payment">Sposób płatności </label>
+					<div class="row"><label for="payment" class="select-label">Sposób płatności </label>
 					<select id="payment" name="payment">
 						<option value="c">gotówka</option>
 						<option value="dc">karta debetowa</option>
 						<option value="cc">karta kredytowa</option>			
-					</select>	</p>
+					</select></div>	
 
-					<p><label for="category">Kategoria </label>
+					<div class="row"><label for="category" class="select-label">Kategoria </label>
 					<select id="category" name="category">
 						<option value="1">jedzenie</option> 
 						<option value="2">mieszkanie</option>
@@ -98,7 +100,7 @@
 						<option value="15">spłata długów</option>
 						<option value="16">darowizna</option>
 						<option value="17">inne wydatki</option>
-					</select></p>
+					</select></div>
 				</div>
 			</div>
 			
