@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Budżet domowy - dodaj wydatek</title>
+	
+	<meta name="description" content="Aplikacja ułatwiająca zarządzanie budżetem domowym." />
+	<meta name="keywords" content="budżet, finanse, dom, lifestyle" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="fontello/css/fontello.css">	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	
+</head>
+
+<body>
+
+	<header>	
+		<h1>budżet domowy</h1>
+	</header>
+
+	<main>
+	
+	<nav class="bar">
+		<a href="main.html" class="main-page">
+			<i class="icon-home"></i>
+		</a>
+		<button class="hamburger">
+			<i class="icon-menu"></i>
+		</button>
+		<ul>
+			<li>
+				<a href="balance.html" class="menu-balance">przeglądaj bilans</a>
+			</li>
+			
+			<li>
+				<a href="income.html" class="menu-income">dodaj przychód</a>
+			</li>
+			
+			<li>
+				<a href="expense.html" class="menu-expense">dodaj wydatek</a>
+			</li>
+		</ul>
+		
+		<a href="settings.html" class="settings">
+			<i class="icon-cogs"></i>
+		</a>
+		
+		<a href="settings.html" class="settings">
+			<i class="icon-logout"></i>
+		</a>
+	</nav>
+	
+	<article>
+	
+		<header>
+			<h2 class="settings-page">ustawienia</h2>
+		</header>	
+		
+		<form class="settings-page">
+			<section class="change-password">
+				<h3 class="settings-page">ZMIANA HASŁA</h3>
+				<div class="row-p">
+					<input type="password" placeholder="nowe hasło" aria-label="nowe hasło" onfocus="this.placeholder=''" onblur="this.placeholder='nowe hasło'">
+				</div>
+				<div class="row-p">
+					<input type="password" placeholder="potwórz nowe hasło" aria-label="potwórz nowe hasło" onfocus="this.placeholder=''" 
+						onblur="this.placeholder='potwórz nowe hasło'">
+				</div>
+				<div class="row" id="btn-confirm">
+					<input type="submit" value="Zatwierdź">
+				</div>
+			</section>
+			
+			<section class="edit-budget">
+				<h3 class="settings-page">EDYCJA BUDŻETU</h3>
+				<div class="wrapper-data">
+					<div class="row">
+						<label for="type">Rodzaj</label>
+						<select id="type" name="type">
+							<option>przychód</option>
+							<option>wydatek</option>
+						</select>
+					</div>
+					
+					<div class="row">
+						<label for="search">Słowo kluczowe</label>
+						<input type="search" id="search" name="?">
+					</div>
+				</div>
+				
+				<div class="wrapper-date">
+					<div class="row">
+						<label for="date">Od (data)</label>
+						<input type="date" id="date" name="date">
+					</div>
+					
+					<div class="row">
+						<label for="date">Do (data)</label>
+						<input type="date" id="date" name="date">
+					</div>
+				</div>
+					
+				<div class="row" id="btn-search">
+					<input type="submit" value="Szukaj">
+				</div>
+
+			
+			</section>
+					<!--
+				<div class="selections-nth">
+					<div class="row"><label for="payment" class="select-label">Sposób płatności </label>
+					<select id="payment" name="payment">
+						<option value="c">gotówka</option>
+						<option value="dc">karta debetowa</option>
+						<option value="cc">karta kredytowa</option>			
+					</select></div>	
+
+					<div class="row"><label for="category" class="select-label">Kategoria </label>
+					<select id="category" name="category">
+						<option value="1">jedzenie</option> 
+						<option value="2">mieszkanie</option>
+						<option value="3">transport</option>
+						<option value="4">telekomunikacja</option>
+						<option value="5">opieka zdrowotna</option>
+						<option value="6">ubranie</option>
+						<option value="7">higiena</option>
+						<option value="8">dzieci</option>
+						<option value="9">rozrywka</option>
+						<option value="10">wycieczka</option>
+						<option value="11">szkolenia</option>
+						<option value="12">książki</option>
+						<option value="13">oszczędności</option>
+						<option value="14">emerytura</option>
+						<option value="15">spłata długów</option>
+						<option value="16">darowizna</option>
+						<option value="17">inne wydatki</option>
+					</select></div>
+				</div>
+			</div>
+			
+			<div class="comment">
+				<label for="comment">Komentarz (opcjonalnie)</label>
+				<textarea id="comment"></textarea>
+			</div>
+			
+			<div class="buttons">
+				<label><input type="submit" id="add" value="Dodaj"></label>
+				<label><input type="submit" id="cancel" value="Anuluj"></label>
+			</div>-->
+			
+		</form>
+		
+	</article>
+	
+	</main>
+	
+	<footer>
+		<i class="icon-mail"></i> marta.gonsiorowska@gmail.com
+	</footer>
+
+</body>
+</html>
