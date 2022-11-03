@@ -1277,13 +1277,13 @@ form.expense-page input[type=submit]:focus
 	
 	form.expense-page .selections-nth
 	{
-		justify-content: center;
+		justify-content: start;
 	}
 	
 	form.expense-page .data
 	{
 		padding-right: 0px;
-		justify-content: center;
+		justify-content: start;
 	}
 	
 	
@@ -1561,11 +1561,7 @@ form.income-page input[type=submit]:focus
 		font-size: 13px;
 	}
 	
-	form.income-page textarea[id=comment]
-	{
-		width: 250px;
-		height: 60px;
-	}
+
 	
 	form.income-page input[type=submit]
 	{
@@ -1623,7 +1619,7 @@ form.income-page input[type=submit]:focus
 	
 	form.income-page .data-label 
 	{
-		flex-basis: 40px;
+		flex-basis: 50px;
 	}
 	
 	form.income-page .comment
@@ -1642,7 +1638,7 @@ form.income-page input[type=submit]:focus
 	form.income-page label, 
 	form.income-page span
 	{
-		font-size: 12px;
+		font-size: 14px;
 	}
 	
 
@@ -1651,7 +1647,7 @@ form.income-page input[type=submit]:focus
 	{
 		width: 80px;
 		height: 20px;
-		font-size: 11px;
+		font-size: 13px;
 	}
 	
 	form.income-page select 
@@ -1663,13 +1659,15 @@ form.income-page input[type=submit]:focus
 	
 	form.income-page .select-label
 	{
-		font-size: 12px;
+		font-size: 13px;
 	}
+	
 	form.income-page textarea[id=comment]
 	{
-		width: 240px;
+		width: 250px;
 		height: 60px;
 	}
+
 	
 	form.income-page input[type=submit]
 	{
@@ -1683,6 +1681,16 @@ form.income-page input[type=submit]:focus
 		transform: scale(0.75)
 	}
 }
+
+@media (max-width: 340px)
+{
+	form.income-page textarea[id=comment]
+	{
+		width: 240px;
+		height: 60px;
+	}
+}
+
 
 
 /* ///// SETTINGS ///// */
