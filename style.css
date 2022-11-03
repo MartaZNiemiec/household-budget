@@ -9,7 +9,6 @@ html
 }
 
 body{
-	/*background-color: #F7F7F2; */
 	font-family: 'Nunito', sans-serif;
 	color: #202020;
 	margin: 0;
@@ -17,9 +16,12 @@ body{
 	margin-bottom: 20px;
 	
 	background-color: #F7F7F2;
-	opacity: 0.95;
+	background-image: url("budget.jpg");
+	background-size: cover;
+	background-position: center;
+	/*opacity: 0.95;
 	background-size: 8px 8px;
-	background-image: repeating-linear-gradient(45deg, #deded9 0, #deded9 0.8px, #F7F7F2 0, #F7F7F2 50%);
+	background-image: repeating-linear-gradient(45deg, #deded9 0, #deded9 0.8px, #F7F7F2 0, #F7F7F2 50%);*/
 }
 
 h1
@@ -897,6 +899,7 @@ h2.balance-page
 	max-width: 600px;
 	height: 80px;
 	font-size: 30px;
+	font-weight: 200;
 	letter-spacing: 1px;
 	background-color: #3F5F5F;
 	color: #363436;
@@ -1035,6 +1038,7 @@ h2.expense-page
 	max-width: 600px;
 	height: 80px;
 	font-size: 30px;
+	font-weight: 200;
 	letter-spacing: 1px;
 	background-color: #B0C4DE;
 	color: #363436;
@@ -1336,6 +1340,7 @@ h2.income-page
 	max-width: 600px;
 	height: 80px;
 	font-size: 30px;
+	font-weight: 200;
 	letter-spacing: 1px;
 	background-color: #d2cacf;
 	color: #363436;
@@ -1510,15 +1515,11 @@ form.income-page input[type=submit]:focus
 	form.income-page .data
 	{
 		flex-basis: 25%;
-		/*height: 50%;
-		align-content: center;
-		padding: 0 20px;*/
 	}
 	
 	form.income-page .selections-nth
 	{
 		flex-basis: 75%;
-		/*height: 50%;*/
 	}
 
 	form.income-page .data-label
@@ -1691,6 +1692,7 @@ h2.settings-page
 	max-width: 600px;
 	height: 80px;
 	font-size: 30px;
+	font-weight: 200;
 	letter-spacing: 1px;
 	background-color: #778899;
 	color: #363436;
