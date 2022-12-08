@@ -15,6 +15,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 	
+	<script src="app.js" defer></script>
+	
 </head>
 
 <body>
@@ -29,23 +31,28 @@
 		<a href="main.html" class="main-page">
 			<i class="icon-home"></i>
 		</a>
-		<button class="hamburger">
-			<i class="icon-menu"></i>
-		</button>
-		<ul>
+		<ol>
 			<li>
-				<a href="balance.html" class="menu-balance">przeglądaj bilans</a>
+			<button class="hamburger">
+				<i class="icon-menu"></i>
+			</button>
+
+			<ul>
+				<li>
+					<a href="balance.html" class="menu-balance">przeglądaj bilans</a>
+				</li>
+				
+				<li>
+					<a href="income.html" class="menu-income">dodaj przychód</a>
+				</li>
+				
+				<li>
+					<a href="expense.html" class="menu-expense">dodaj wydatek</a>
+				</li>
+			</ul>
 			</li>
+		</ol>
 			
-			<li>
-				<a href="income.html" class="menu-income">dodaj przychód</a>
-			</li>
-			
-			<li>
-				<a href="expense.html" class="menu-expense">dodaj wydatek</a>
-			</li>
-		</ul>
-		
 		<a href="settings.html" class="settings">
 			<i class="icon-cogs"></i>
 		</a>
@@ -65,16 +72,17 @@
 			<div class="selections">
 				<div class="data">
 					<div class="row"><label for="cost" class="data-label">Kwota </label>
-					<input type="number" id="cost" name="cost"></div>
+					<input type="number" id="cost" name="cost" min="0" step="0.01"></div>
 				
 				
 					<div class="row"><label for="date" class="data-label">Data </label>
-					<input type="date" id="date" name="date"></div>
+					<input type="date" id="date" name="date" min="2000-01-01"></div>
 				</div>
 					
 				<div class="selections-nth">
 					<div class="row"><label for="payment" class="select-label">Sposób płatności </label>
 					<select id="payment" name="payment">
+						<option>wybierz...</option>
 						<option value="c">gotówka</option>
 						<option value="dc">karta debetowa</option>
 						<option value="cc">karta kredytowa</option>			
@@ -82,6 +90,7 @@
 
 					<div class="row"><label for="category" class="select-label">Kategoria </label>
 					<select id="category" name="category">
+						<option>wybierz...</option>
 						<option value="1">jedzenie</option> 
 						<option value="2">mieszkanie</option>
 						<option value="3">transport</option>

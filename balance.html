@@ -15,6 +15,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 	
+	<script src="app.js" defer></script>
+	
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
       google.charts.load("current", {packages:["corechart"]});
@@ -56,23 +58,28 @@
 		<a href="main.html" class="main-page">
 			<i class="icon-home"></i>
 		</a>
-		<button class="hamburger">
-			<i class="icon-menu"></i>
-		</button>
-		<ul>
+		<ol>
 			<li>
-				<a href="balance.html" class="menu-balance">przeglądaj bilans</a>
+			<button class="hamburger">
+				<i class="icon-menu"></i>
+			</button>
+
+			<ul>
+				<li>
+					<a href="balance.html" class="menu-balance">przeglądaj bilans</a>
+				</li>
+				
+				<li>
+					<a href="income.html" class="menu-income">dodaj przychód</a>
+				</li>
+				
+				<li>
+					<a href="expense.html" class="menu-expense">dodaj wydatek</a>
+				</li>
+			</ul>
 			</li>
+		</ol>
 			
-			<li>
-				<a href="income.html" class="menu-income">dodaj przychód</a>
-			</li>
-			
-			<li>
-				<a href="expense.html" class="menu-expense">dodaj wydatek</a>
-			</li>
-		</ul>
-		
 		<a href="settings.html" class="settings">
 			<i class="icon-cogs"></i>
 		</a>
@@ -80,7 +87,6 @@
 		<a href="logout.html" class="settings">
 			<i class="icon-logout"></i>
 		</a>
-	
 	</nav>
 	
 	<article class="balance-page">
