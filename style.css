@@ -470,7 +470,8 @@ form.register-page
 {
 	width: 100%;
 	max-width: 320px;
-	height: 280px;
+	height: 100%;
+	min-height: 280px;
 	margin-right: auto;
 	margin-left: auto;
 	background-color: #FCFCF9;
@@ -489,6 +490,14 @@ form.register-page .row
 	margin-bottom: 10px;
 	display: flex;
 	justify-content: center;
+}
+
+form.register-page span.invalid
+{
+	width: 100%;
+	font-size: 0.8rem;
+	color: red;
+	text-align: center;
 }
 
 
